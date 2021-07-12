@@ -1,0 +1,307 @@
+/** Add css rules here for your application. */
+/** Example rules used by the template application (remove for your app) */
+:root {
+  --border-size: 0.125rem;
+  --duration: 250ms;
+  --ease: cubic-bezier(0.215, 0.61, 0.355, 1);
+  --font-family: monospace;
+  --color-primary: white;
+  --color-secondary: black;
+  --color-tertiary: dodgerblue;
+  --shadow: rgba(0, 0, 0, 0.1);
+  --space: 1rem;
+}
+
+@font-face {
+  font-family: 'NarutoFont';
+  src: url('/resources/njnaruto.ttf');
+}
+
+
+body{
+	background-color: #ebebeb !important;
+}
+h1 {
+	font-size: 2em;
+	font-weight: bold;
+	color: #777777;
+	margin: 40px 0px 70px;
+	text-align: center;
+}
+
+.sendButton {
+	display: block;
+	font-size: 16pt;
+}
+
+.flex {
+	display: flex;
+}
+
+.space-arround {
+	justify-content: space-around;
+}
+
+.space-between {
+	justify-content: space-between;
+}
+
+.modal-title {
+	font-size: 34px;
+	text-align: center;
+	background-color: #f2f2f2;
+	height: 50px;
+	padding-top: 11px;
+	border-radius: 2px;
+	font-family: 'Roboto', sans-serif !important;
+	cursor: grab;
+}
+
+.modal-title:active {
+	cursor: grabbing;
+}
+/** Most GWT widgets already have a style name defined */
+.gwt-DialogBox {
+	width: 400px;
+}
+
+.dialogVPanel {
+	margin: 5px;
+}
+
+.serverResponseLabelError {
+	color: red;
+}
+
+/** Set ids using widget.getElement().setId("idOfElement") */
+#closeButton {
+	margin: 15px 6px 6px;
+}
+
+.initial-menu {
+	display: flex;
+	justify-content: space-around;
+	height: 100vh;
+	align-items: center;
+	font-family: 'Roboto', sans-serif !important;
+}
+
+.home-btn {
+	background-image: url("/resources/home.png");
+	background-size: contain;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+
+.not-visible {
+	display: none !important;
+}
+
+#tab {
+	position: fixed;
+	top: 10px;
+}
+.canvas{
+	background-color: rgb(255,255,255) !important;
+	z-index: 200;
+}
+.initial-button {
+	width: 200px;
+	height: 50px;
+	opacity: 1;
+}
+.naruto-title{
+ 
+    position: absolute;
+    top: 10%;
+    display: flex;
+    width: 100%;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+.sub-title{
+color: red;
+position:relative;
+bottom:50px;
+left:7%;
+text-shadow: 0 1px 0px #378ab4, 1px 0 0px #5dabcd, 1px 2px 1px #378ab4, 2px 1px 1px #5dabcd, 2px 3px 2px #378ab4, 3px 2px 2px #5dabcd, 3px 4px 2px #378ab4, 4px 3px 3px #5dabcd, 4px 5px 3px #378ab4, 5px 4px 2px #5dabcd, 5px 6px 2px #378ab4, 6px 5px 2px #5dabcd, 6px 7px 1px #378ab4, 7px 6px 1px #5dabcd, 7px 8px 0px #378ab4, 8px 7px 0px #5dabcd;
+font-family: 'NarutoFont';
+}
+
+.button-naruto{
+    background-image: url(/resources/pergaminho-naruto.png);
+    width: 300px;
+    height: 70px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    cursor: pointer;
+}
+.text-settings{
+	font-family: 'NarutoFont';
+    color: black;
+    font-size: 34px;
+    position: relative;
+    top: 14px;
+    z-index: 99;
+	transition: color 1s, font-size 1s;
+}
+.text-settings:hover{
+
+	    font-size: 30px;
+}
+.kyuubi-naruto{
+background-image: url(/resources/narutokyuubi.gif);
+    width: 140px;
+    height: 109px;
+    display: block;
+    background-size: cover;
+    /* z-index: 99; */
+    bottom: 10px;
+    position: absolute;
+
+	
+}
+
+
+.kyuubiShippuden-naruto{
+background-image: url(/resources/shippudenKyuubi.gif);
+    width: 140px;
+    height: 80px;
+    display: block;
+    background-size: contain;
+    /* z-index: 99; */
+    bottom: 10px;
+    position: absolute;
+    background-repeat: no-repeat; 
+
+	
+}
+
+
+.fade-in {
+  animation: fadeIn ease 10s;
+  -webkit-animation: fadeIn ease 10s;
+  -moz-animation: fadeIn ease 10s;
+  -o-animation: fadeIn ease 10s;
+  -ms-animation: fadeIn ease 10s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+.gwt-TabLayoutPanelContentContainer {
+	border-color: #ff9800 !important;
+}
+.gwt-TabLayoutPanel .gwt-TabLayoutPanelTab-selected {
+	background: yellow !important;
+	
+}
+.gwt-PopupPanelGlass {
+	    background-color: #ffdb9e  !important;
+	
+	
+}
+
+
+.multi-button {
+  display: flex;
+  width: 100%;
+  box-shadow: var(--shadow) 4px 4px;
+}
+
+.multi-button button {
+  flex-grow: 1;
+  cursor: pointer;
+  position: relative;
+  padding:
+    calc(var(--space) / 1.125)
+    var(--space)
+    var(--space);
+  border: var(--border-size) solid black;
+  color: var(--color-secondary);
+  background-color: var(--color-primary);
+  font-size: 1.5rem;
+  font-family: var(--font-family);
+  text-transform: lowercase;
+  text-shadow: var(--shadow) 2px 2px;
+  transition: flex-grow var(--duration) var(--ease);
+}
+
+.multi-button button + button {
+  border-left: var(--border-size) solid black;
+  margin-left: calc(var(--border-size) * -1);
+}
+
+.multi-button button:hover,
+.multi-button button:focus {
+  flex-grow: 2;
+  color: white;
+  outline: none;
+  text-shadow: none;
+  background-color: var(--color-secondary);
+}
+
+.multi-button button:focus {
+  outline: var(--border-size) dashed var(--color-primary);
+  outline-offset: calc(var(--border-size) * -3);
+}
+
+.multi-button:hover button:focus:not(:hover) {
+  flex-grow: 1;
+  color: var(--color-secondary);
+  background-color: var(--color-primary);
+  outline-color: var(--color-tertiary);
+}
+
+.multi-button button:active {
+  transform: translateY(var(--border-size));
+}
+.image-100{
+	position: absolute;
+    top: 40%;
+    left: 40%;
+    display: none;
+}
+
+.image-100 image{
+	position: absolute;
+}
+.visible{
+	display: block !important;
+}
+
+

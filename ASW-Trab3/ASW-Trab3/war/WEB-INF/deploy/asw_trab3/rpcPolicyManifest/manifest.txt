@@ -1,0 +1,3 @@
+# Module asw_trab3
+# RPC service class, partial path of RPC policy file
+mpjp.client.MPJPService, 8E494909AE18EDF6440D6B8C46C36E91.gwt.rpc

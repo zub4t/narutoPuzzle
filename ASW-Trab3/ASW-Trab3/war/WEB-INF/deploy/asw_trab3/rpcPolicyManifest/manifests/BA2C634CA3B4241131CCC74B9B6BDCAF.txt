@@ -1,0 +1,2 @@
+serviceClass: mpjp.client.MPJPService
+path: 97A9A144110C90B870891AFE9F6612A5.gwt.rpc
